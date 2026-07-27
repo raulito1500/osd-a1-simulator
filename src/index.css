@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { font-family: 'Inter', system-ui, sans-serif; }
+
+.graded-essay del {
+    color: #ef4444;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    opacity: 0.85;
+}
+
+.graded-essay .handwritten {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: oklch(28.9% 0.175 293.0);
+    background-color: oklch(85.8% 0.051 293.0);
+    padding: 0 0.4em;
+    margin: 0 3px;
+    border-radius: 7px;
+    line-height: 1;
+    display: inline-block;
+    transform: rotate(-1.5deg);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    text-decoration: none;
+}
+
+.graded-essay .addition {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: #166534;
+    background-color: #bbf7d0;
+    padding: 0 0.4em;
+    margin: 0 3px;
+    border-radius: 7px;
+    line-height: 1;
+    display: inline-block;
+    transform: rotate(1.5deg);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    text-decoration: none;
+}
