@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/osd-a1-simulator/static/css/main.5218f8d8.css",
+    "main.js": "/osd-a1-simulator/static/js/main.720c54b7.js",
+    "static/js/453.1a7d6de8.chunk.js": "/osd-a1-simulator/static/js/453.1a7d6de8.chunk.js",
+    "index.html": "/osd-a1-simulator/index.html",
+    "main.5218f8d8.css.map": "/osd-a1-simulator/static/css/main.5218f8d8.css.map",
+    "main.720c54b7.js.map": "/osd-a1-simulator/static/js/main.720c54b7.js.map",
+    "453.1a7d6de8.chunk.js.map": "/osd-a1-simulator/static/js/453.1a7d6de8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5218f8d8.css",
+    "static/js/main.720c54b7.js"
+  ]
+}
