@@ -3,6 +3,7 @@ import PlaceholderPage from './components/PlaceholderPage';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import SpeakingAufgabe2 from './modules/SpeakingAufgabe2';
+import SpeakingAufgabe3 from './modules/SpeakingAufgabe3';
 import WritingAufgabe2 from './modules/WritingAufgabe2';
 
 // Read from a local .env file (REACT_APP_GEMINI_API_KEY=...), never committed.
@@ -17,6 +18,7 @@ export default function App() {
     const [modulePhase, setModulePhase] = useState('idle');
 
     const isModuleRoute = (activeView.main === 'Sprechen' && activeView.sub === 'Aufgabe 2') ||
+        (activeView.main === 'Sprechen' && activeView.sub === 'Aufgabe 3') ||
         (activeView.main === 'Schreiben' && activeView.sub === 'Aufgabe 2');
 
     useEffect(() => {
@@ -26,6 +28,9 @@ export default function App() {
     const renderActiveView = () => {
         if (activeView.main === 'Sprechen' && activeView.sub === 'Aufgabe 2') {
             return <SpeakingAufgabe2 apiKey={GEMINI_API_KEY} onPhaseChange={setModulePhase} />;
+        }
+        if (activeView.main === 'Sprechen' && activeView.sub === 'Aufgabe 3') {
+            return <SpeakingAufgabe3 apiKey={GEMINI_API_KEY} onPhaseChange={setModulePhase} />;
         }
         if (activeView.main === 'Schreiben' && activeView.sub === 'Aufgabe 2') {
             return <WritingAufgabe2 apiKey={GEMINI_API_KEY} onPhaseChange={setModulePhase} />;
